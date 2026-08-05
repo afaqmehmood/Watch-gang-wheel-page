@@ -1662,7 +1662,7 @@ body.drawer-open .mobile-drawer {
     text-transform: uppercase;
     
     /* 1. Define the gradient as a background image */
-    background: linear-gradient(30deg, #0051FF,  #00CEFF);
+    background: linear-gradient(0deg, #0051FF,  #00CEFF);
     
     /* 2. Clip the background so it only shows through the letters */
     -webkit-background-clip: text; /* For Safari and Chrome */
