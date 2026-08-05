@@ -1,27 +1,34 @@
 /* --- Global Theme Variables --- */
 :root {
+    /* Backgrounds */
     --bg-dark: #000000;
     --bg-surface: #0e0e0e;
     --bg-card: #151515;
-    --bg-white: #fff;
-    --bg-muted: #F2F2F2;
-    --text-main: #ffffff;
-    --text-dark: #000;
-    --text-muted: rgba(170, 170, 170, 1);
-    --accent-blue: #00bcff;
-    --accent-red: #e50914;
-    --accent-blue-hover: #009ad4;
-    --accent-red-hover: #e50914;
-    --accent-gold: #d4af37;
+    --bg-white: #ffffff;
+    --bg-muted: #f2f2f2;
     --bg-blue: rgba(0, 191, 236, 1);
+
+    /* Text Colors */
+    --text-main: #ffffff;
+    --text-dark: #000000;
+    --text-muted: rgba(170, 170, 170, 1);
+
+    /* Accents & States */
+    --accent-blue: #00bcff;
+    --accent-blue-hover: #009ad4;
+    --accent-red: #e50914;
+    --accent-red-hover: #b80710;
+    --accent-gold: #d4af37;
+
+    /* Header Config */
     --header-bg-color: rgba(255, 255, 255, 1);
     --header-text-color: #000000;
+
+    /* Typography Stack */
     --font-body: "Lato", sans-serif;
-    --font-special: "Barlow Condensed", sans-serif;
-    --font-heading: "Acumin Pro ExtraCondensed", sans-serif;
-    --font-heading: "Saira Extra Condensed", sans-serif;
+    --font-heading: "Saira Extra Condensed", "Acumin Pro ExtraCondensed", sans-serif;
     --font-special: var(--font-heading);
-    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, "Acumin Pro ExtraCondensed", sans-serif;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, var(--font-body), Helvetica, Arial, var(--font-heading), sans-serif;
 }
 
 /* --- Base Resets --- */
@@ -1633,4 +1640,332 @@ body.drawer-open .mobile-drawer {
 /* Ensure banner cursor triggers interactivity */
 .hero-right .banner {
     cursor: pointer;
+}
+
+/* --- HOW IT WORKS SECTION --- */
+.how-it-works {
+    background: radial-gradient(circle at center, #1a1a1a 0%, var(--bg-dark) 100%);
+    color: var(--text-main);
+    padding: 80px 0;
+}
+
+.main-title {
+    font-family: var(--font-heading), var(--font-stack);
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    
+    /* 1. Define the gradient as a background image */
+    background: linear-gradient(30deg, #0051FF,  #00CEFF);
+    
+    /* 2. Clip the background so it only shows through the letters */
+    -webkit-background-clip: text; /* For Safari and Chrome */
+    background-clip: text;
+    
+    /* 3. Make the actual text color transparent so the background gradient shines through */
+    -webkit-text-fill-color: transparent;
+    color: var(--accent-blue); /* Fallback */
+}
+
+/* Step Row Layout */
+.step-row {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.step-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.step-number {
+    font-family: var(--font-heading), var(--font-stack);
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.8;
+    color: transparent;
+    -webkit-text-stroke: 2px #444;
+}
+
+.step-text h3 {
+    font-family: var(--font-heading), var(--font-stack);
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.step-text p {
+    color: var(--text-muted);
+    font-family: var(--font-body), var(--font-stack);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Step 01 Wheel Grid */
+.wheel-buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.wheel-badge {
+    background-color: #222;
+    color: var(--text-muted);
+    font-family: var(--font-special), var(--font-stack);
+    border: 1px solid #333;
+    padding: 10px 25px;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.wheel-badge.active, .wheel-badge:hover {
+    background-color: var(--accent-blue);
+    color: var(--text-white);
+    border-color: var(--accent-blue);
+}
+
+/* Step 02 Card Box Layout */
+.step-card-wrapper {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    border-radius: 12px;
+    padding: 45px 46px;
+    margin-bottom: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.step-card-wrapper .step-number {
+    -webkit-text-stroke: 2px #ccc;
+}
+
+.step-02 .step-text h3 {
+    color: var(--color-dark)
+}
+
+.step-card-wrapper .step-text p {
+    color: #555;
+}
+
+.highlight-blue {
+    color: var(--accent-blue);
+}
+
+/* Watch Selector */
+.watch-selector-preview {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.watch-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.watch-card img {
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    margin-bottom: 10px;
+    max-height: 210px;
+}
+
+.watch-card .brand {
+    font-family: var(--font-heading), var(--font-stack);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.watch-card .model {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, opacity 0.2s;
+}
+
+.action-btn.add {
+    opacity: 0.3;
+}
+
+.action-btn .swatch-icon {
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.action-btn.remove, .action-btn:hover {
+    background-color: var(--text-dark);
+    color: var(--text-main);
+    border-color: var(--text-dark);
+    opacity: 1;
+}
+
+.action-btn.remove .swatch-icon, .action-btn:hover .swatch-icon {
+    transform: rotate(45deg);
+}
+
+/* Step 03 Wheel Graphic */
+.wheel-graphic {
+    display: flex;
+    justify-content: center;
+}
+
+.wheel-graphic img {
+    max-width: 80%;
+    width: 100%;
+}
+
+/* Bottom Call To Action */
+.how-it-works-cta {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cta-subtitle {
+    font-family: var(--font-body), var(--font-stack);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-main);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cta-title {
+    font-family: var(--font-heading), var(--font-stack);
+    font-size: 32px;
+    font-weight: 700;
+    
+    /* 1. Define the gradient as a background image */
+    background: linear-gradient(30deg, #0051FF,  #00CEFF);
+    
+    /* 2. Clip the background so it only shows through the letters */
+    -webkit-background-clip: text; /* For Safari and Chrome */
+    background-clip: text;
+    
+    /* 3. Make the actual text color transparent so the background gradient shines through */
+    -webkit-text-fill-color: transparent;
+    color: var(--accent-blue); /* Fallback */
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    line-height: 1.2;
+}
+
+.btn-primary-large {
+    background-color: var(--accent-blue);
+    color: var(--text-white);
+    font-family: var(--font-special), var(--font-stack);
+    font-weight: 600;
+    line-height: 1;
+    font-size: 22px;
+    letter-spacing: 1px;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.btn-primary-large:hover {
+    background-color: var(--accent-blue-hover);
+}
+
+/* Desktop Responsiveness */
+@media (min-width: 992px) {
+
+    .how-it-works {
+        padding-inline: 33px
+    }
+    
+    .main-title {
+        font-size: 100px;
+    }
+
+    .step-text p {
+        font-size: 18px;
+    }
+
+    .step-row {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .step-content {
+        flex: 1;
+    }
+
+    .step-media {
+        flex: 1;
+    }
+
+    .step-02 {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+    .step-02 .step-media {
+        flex-basis: 40%;
+    }
+
+    .step-02 .step-content {
+        flex-basis: 60%;
+    }
+
+    .step-03 {
+        align-items: center;
+    }
+
+    .step-number {
+        font-size: 200px;
+    }
+
+    .step-text h3 {
+        font-size: 50px;
+    }
+
+    .cta-subtitle {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .cta-title {
+        font-size: 72px;
+    }
+
+    .btn-primary-large {
+        font-size: 28px;
+    }
 }
