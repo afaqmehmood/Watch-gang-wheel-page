@@ -459,9 +459,6 @@ body.drawer-open .mobile-drawer {
 }
 
 .hero-right .banner-link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -469,11 +466,17 @@ body.drawer-open .mobile-drawer {
     font-weight: 400;
     font-size: 25px;
     line-height: 1;
-    padding: 25px;
     letter-spacing: 0;
     text-decoration: none;
     color: var(--text-main);
     font-family: var(--font-special);
+}
+
+.hero-right .banner-link::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    inset: 0;
 }
 
 .hero-content {
@@ -541,7 +544,7 @@ body.drawer-open .mobile-drawer {
         align-self: stretch;
     }
     .hero-right .hero-title {
-        font-size: 68px;
+        font-size: clamp(40px, 5vw, 68px);
     }
 }
 
