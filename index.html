@@ -46,7 +46,8 @@
           families: [
             "Oswald:200,300,400,500,600,700",
             "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
-            "Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900"
+            "Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900",
+            "Saira+Extra+Condensed: 100,200,300,400,500,600,700,800,900",
           ],
         },
       });
@@ -147,29 +148,35 @@
             <div class="hero-container">
                 <div class="hero-left" >
                     <div class="hero-content">
-                        <p class="hero-subtitle">THE WHEEL</p>
-                        <h1 class="hero-title">THE BEST WAY TO BUY EVERYTHING</h1>
-                        <p class="hero-description"><b>Online shopping doesn't have to be boring.</b><br>Buy from the wheel and every purchase is a chance to win something amazing!</p>
+                        <p class="hero-subtitle">The Watch Gang Wheel</p>
+                        <h1 class="hero-title">The most fun <br>way to buy your <br>next watch</h1>
+                        <p class="hero-description">With every spin, you’ll receive a watch from <br>your selection—with a chance to land one <br>worth even more!</p>
                         <a href="https://shop.watchgang.com/collections" target="_blank" class="btn-primary">LET'S GET STARTED!</a>
                     </div>
                     <div class="hero-center">
                         <div class="wheel-wrapper">
                             <!-- Placeholder representing "The Wheel - Page.jpg" Hero Element -->
                             <img src="images/wheel-pointer-new.png" alt="Wheel Pointer" class="wheel-pointer">
-                            <img src="images/generic-slider-wheel.png" alt="The Wheel" class="wheel-img">
+                            <img src="images/wheel_new.png" alt="The Wheel" class="wheel-img">
                         </div>
                     </div>
                 </div>
                 <div class="hero-right">
                     <div class="video-thumbnail banner" data-modal-target="video-modal">
-                        <img src="images/hero-bg-2.png" alt="Video Thumbnail">
+                        <img src="images/promo-banner-1.png" alt="Video Thumbnail">
                         <span class="play-btn">▶</span>
-                        <a href="https://www.watchgang.com" target="_blank" class="banner-link"><span>HERE'S HOW IT WORKS</span><img src="images/icon-link.svg" class="icon" alt=""></a>
+                        <div class="content-wrapper">
+                            <h2 class="hero-title">Hew<br>Here?</h2>
+                            <a href="https://www.watchgang.com" target="_blank" class="banner-link"><span>Watch a Quick <br>90-Second Guide.</span><img src="images/icon-link.svg" class="icon" alt=""></a>
+                        </div>
 
                     </div>
                     <div class="promo-banner banner" data-modal-target="image-modal">
-                        <img src="images/hero-bg-3.png" alt="4th of July Blowout">
-                        <a href="https://www.watchgang.com" target="_blank" class="banner-link"><span>WHEEL EVENT</span><img src="images/icon-link.svg" class="icon" alt=""></a>
+                        <img src="images/promo-banner-2.png" alt="4th of July Blowout">
+                        <div class="content-wrapper">
+                            <h2 class="hero-title">Here’s How the Wheel Works</h2>
+                            <a href="https://www.watchgang.com" target="_blank" class="banner-link"><span>Choose Your Wheel. Spin. Unlock.<br>Keep the Watch You Land On.</span><img src="images/icon-link.svg" class="icon" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,8 +216,11 @@
                     <button class="tab-btn active" data-filter="all">HOME</button>
                     <button class="tab-btn" data-filter="price">BY PRICE</button>
                     <button class="tab-btn" data-filter="premium">PREMIUM</button>
-                    <button class="tab-btn" data-filter="watches">WATCHES ONLY</button>
                     <button class="tab-btn" data-filter="accessories">ACCESSORIES</button>
+                    <button class="tab-btn" data-filter="women">WOMEN</button>
+                    <button class="tab-btn" data-filter="grails">GRAILS</button>
+                    <button class="tab-btn" data-filter="all">WEEKEND EVENTS</button>
+                    <button class="tab-btn" data-filter="grails">ROLEX GRAIL</button>
                 </nav>
 
                 <div class="section-header-row container-fluid">
@@ -233,76 +243,141 @@
                 <!-- Swiper Carousel Grid wrapper -->
                 <div class="swiper wheels-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-category="price">
+                        <div class="swiper-slide" data-category="deal">
                             <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$99</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-1.png" class="card-media" alt="Card image 1">
+                                <img src="images/card-product-img-1.png" class="card-media" alt="Card image 1">
                                 <h3 class="product-title">DEAL</h3>
                             </div>
                         </div>
-                        <div class="swiper-slide" data-category="price">
-                            <div class="card-inner deal-plus">
+                        <div class="swiper-slide" data-category="deal">
+                            <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$169</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-2.png" class="card-media" alt="Card image 2">
+                                <img src="images/card-product-img-2.png" class="card-media" alt="Card image 2">
                                 <h3 class="product-title">DEAL+</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="sport">
+                            <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$295</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-3.png" class="card-media" alt="Card image 3">
+                                <h3 class="product-title">Sport</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="luxury">
+                            <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$395</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-4.png" class="card-media" alt="Card image 4">
+                                <h3 class="product-title">Luxury</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="luxury">
+                            <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$479</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-5.png" class="card-media" alt="Card image 5">
+                                <h3 class="product-title">Luxury+</h3>
                             </div>
                         </div>
                         <div class="swiper-slide" data-category="premium">
                             <div class="card-inner sport">
+                                <span class="price badge">
+                                    only <b>$550</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-3.png" class="card-media" alt="Card image 3">
-                                <h3 class="product-title">SPORT</h3>
+                                <img src="images/card-product-img-9.png" class="card-media" alt="Card image 9">
+                                <h3 class="product-title">Premium</h3>
                             </div>
                         </div>
                         <div class="swiper-slide" data-category="premium">
                             <div class="card-inner luxury">
+                                <span class="price badge">
+                                    only <b>$669</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-4.png" class="card-media" alt="Card image 4">
-                                <h3 class="product-title">LUXURY</h3>
+                                <img src="images/card-product-img-10.png" class="card-media" alt="Card image 10">
+                                <h3 class="product-title">Premium+</h3>
                             </div>
                         </div>
-                        <div class="swiper-slide" data-category="watches">
-                            <div class="card-inner luxury-plus">
-                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-5.png" class="card-media" alt="Card image 5">
-                                <h3 class="product-title">LUXURY+</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="swiper-slide" data-category="price">
+                        <div class="swiper-slide" data-category="collectors">
                             <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$795</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-1.png" class="card-media" alt="Card image 1">
-                                <h3 class="product-title">DEAL</h3>
+                                <img src="images/card-product-img-6.png" class="card-media" alt="Card image 6">
+                                <h3 class="product-title">Collectors</h3>
                             </div>
                         </div>
-                        <div class="swiper-slide" data-category="price">
+                        <div class="swiper-slide" data-category="collectors">
+                            <div class="card-inner deal-plus">
+                                <span class="price badge">
+                                    only <b>$949</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-7.png" class="card-media" alt="Card image 7">
+                                <h3 class="product-title">Collectors+</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="grails">
                             <div class="card-inner deal-plus">
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-2.png" class="card-media" alt="Card image 2">
-                                <h3 class="product-title">DEAL+</h3>
+                                <img src="images/card-product-img-8.png" class="card-media" alt="Card image 8">
+                                <h3 class="product-title">Grail Wheel</h3>
                             </div>
                         </div>
-                        
-                        <div class="swiper-slide" data-category="premium">
+                        <div class="swiper-slide" data-category="accessories">
+                            <div class="card-inner deal">
+                                <span class="price badge">
+                                    only <b>$29</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-11.png" class="card-media" alt="Card image 11">
+                                <h3 class="product-title">Accessories & EDC</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="accessories">
+                            <div class="card-inner deal-plus">
+                                <span class="price badge">
+                                    only <b>$79</b>
+                                </span>
+                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
+                                <img src="images/card-product-img-12.png" class="card-media" alt="Card image 12">
+                                <h3 class="product-title">Accessories & EDC</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-category="women">
                             <div class="card-inner sport">
+                                <span class="price badge">
+                                    only <b>$99</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-3.png" class="card-media" alt="Card image 3">
-                                <h3 class="product-title">SPORT</h3>
+                                <img src="images/card-product-img-13.png" class="card-media" alt="Card image 13">
+                                <h3 class="product-title">Women</h3>
                             </div>
                         </div>
-                        <div class="swiper-slide" data-category="premium">
+                        <div class="swiper-slide" data-category="women">
                             <div class="card-inner luxury">
+                                <span class="price badge">
+                                    only <b>$199</b>
+                                </span>
                                 <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-4.png" class="card-media" alt="Card image 4">
-                                <h3 class="product-title">LUXURY</h3>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-category="watches">
-                            <div class="card-inner luxury-plus">
-                                <a href="https://shop.watchgang.com/collections" target="_blank"></a>
-                                <img src="images/card-image-5.png" class="card-media" alt="Card image 5">
-                                <h3 class="product-title">LUXURY+</h3>
+                                <img src="images/card-product-img-14.png" class="card-media" alt="Card image 14">
+                                <h3 class="product-title">Women</h3>
                             </div>
                         </div>
                     </div>
@@ -367,7 +442,7 @@
 
         <!-- 6. BLOG/ARTICLE GRID -->
         <section class="blog-section">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="blog-grid">
                     <!-- Article 1 -->
                     <article class="blog-card">
