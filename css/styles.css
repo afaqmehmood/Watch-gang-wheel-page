@@ -1868,7 +1868,7 @@ body.drawer-open .mobile-drawer {
 .cta-title {
     font-family: var(--font-heading), var(--font-stack);
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
     
     /* 1. Define the gradient as a background image */
     background: linear-gradient(30deg, #0051FF,  #00CEFF 80%);
