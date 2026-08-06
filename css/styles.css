@@ -1693,7 +1693,7 @@ body.drawer-open .mobile-drawer {
     font-weight: 900;
     line-height: 0.8;
     color: transparent;
-    -webkit-text-stroke: 2px #444;
+    -webkit-text-stroke: 2px #aaa;
 }
 
 .step-text h3 {
@@ -1722,7 +1722,7 @@ body.drawer-open .mobile-drawer {
 }
 
 .wheel-badge {
-    background-color: #222;
+    background-color: #aaa;
     color: var(--text-muted);
     font-family: var(--font-special), var(--font-stack);
     border: 1px solid #333;
